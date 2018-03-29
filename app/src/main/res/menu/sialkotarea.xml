@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:title="Hamza Ghous" />
+    <item
+
+        android:title="Pindi Arayan" />
+    <item
+
+
+        android:title="	Talwara Mughlan" />
+    <item
+
+        android:title="Kotli Behram" />
+    <item
+        android:title="Pacca Garha" />
+    <item
+
+        android:title=" Model Town" />
+
+
+    <item
+
+        android:title=" Miana pura" />
+    <item
+        android:title="	Muzafar Pura" />
+    <item
+
+        android:title="Mubarak Pura" />
+    <item
+        android:title="	Shah Syedan" />
+    <item
+        android:title="Shahab Pura" />
+    <item
+        android:title=" Fateh Garh" />
+
+
+    <item
+        android:title="Haji Pura" />
+    <item
+        android:title="Haji Pura ban" />
+    <item
+        android:title="	Imam Sahab" />
+    <item
+
+        android:title="Neika pura" />
+    <item
+        android:title="Doburji Arian" />
+    <item
+
+        android:title=" Islamabad" />
+
+
+    <item
+
+        android:title=" Karim Pura" />
+    <item
+        android:title="Puran Heeran" />
+    <item
+
+        android:title="	Rang Pura" />
+    <item
+        android:title="	Ahmed Pura" />
+    <item
+        android:title="Muhammad Pura" />
+    <item
+        android:title=" Gudpur" />
+
+    <item
+
+        android:title="	Kotli Loharan" />
+    <item
+        android:title="	Head Mrala" />
+    <item
+        android:title="Laari Adda" />
+    <item
+        android:title="Machi Khokhar"/>
+</menu>
+
+
+

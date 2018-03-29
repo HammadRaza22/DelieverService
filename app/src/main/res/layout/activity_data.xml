@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ghummanjeee.sample.dataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/pkname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:hint="PickUp Address"
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pc">
+
+            <EditText
+                android:id="@+id/dlname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Delivery Address"
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dl">
+
+            <EditText
+                android:textColor="@color/primary_dark"
+                android:textStyle="bold"
+                android:id="@+id/dlchege"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Delivery Charge"
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/fee"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textInputLayout"
+            android:text="The SHipment fee will Paid by: " />
+
+        <LinearLayout
+            android:id="@+id/paid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fee"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp">
+
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dlchege"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:selectAllOnFocus="true"
+                    android:text="Shipper" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Reciever" />
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paid"
+            android:text="Payment Method " />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pay">
+
+            <EditText
+                android:id="@+id/paymnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/recnm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/payment"
+            android:text="Receiver Name " />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/rc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recnm">
+
+            <EditText
+                android:id="@+id/rcneme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/rcphn"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rc"
+            android:text="Phone NO Reciever " />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/rcph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rcphn">
+
+            <EditText
+                android:id="@+id/rcphe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/rcphw"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rcph"
+            android:text="Quantity Of Product....Maximun 7Kg " />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wgh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rcphw">
+
+            <EditText
+                android:id="@+id/wa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                        android:inputType="textCapWords" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/wght"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wgh"
+            android:text="ADD PHOTO " />
+
+       <ImageView
+           android:id="@+id/image"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/wght"/>
+    </RelativeLayout>
+</ScrollView>
